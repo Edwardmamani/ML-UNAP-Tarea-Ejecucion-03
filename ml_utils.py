@@ -28,7 +28,7 @@ def setup_environment(seed: int = RANDOM_STATE, dpi: int = 110):
 
 
 def load_csv(name: str, repo_raw: str = REPO_RAW) -> pd.DataFrame:
-    """Carga un dataset desde data/ (local o en subcarpetas) o desde GitHub (en Colab)."""
+    """Carga un dataset desde data/ (local o en subcarpetas) o descargando desde el repositorio en GitHub."""
     candidates = [
         os.path.join("data", name),
         os.path.join("..", "data", name),
