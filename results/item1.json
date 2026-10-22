@@ -1,0 +1,211 @@
+{
+  "results": [
+    {
+      "Modelo": "CART Gini (sin podar)",
+      "Acc. train": 1.0,
+      "Acc. CV (media)": 0.9253140096618357,
+      "Acc. CV (std)": 0.04157576726219799,
+      "ROC-AUC CV": 0.9213525065198492,
+      "Acc. test": 0.9122807017543859,
+      "Precisión maligno": 0.8478260869565217,
+      "Recall maligno": 0.9285714285714286,
+      "F1 maligno": 0.8863636363636364,
+      "ROC-AUC test": 0.9156746031746031,
+      "Malignos no detectados (FN)": 3,
+      "Profundidad": 7.0,
+      "Hojas": 19.0,
+      "Tiempo fit (s)": 0.010547964000579668
+    },
+    {
+      "Modelo": "CART Entropía (sin podar)",
+      "Acc. train": 1.0,
+      "Acc. CV (media)": 0.9230434782608696,
+      "Acc. CV (std)": 0.04062342366030318,
+      "ROC-AUC CV": 0.9183497536945812,
+      "Acc. test": 0.9122807017543859,
+      "Precisión maligno": 0.8333333333333334,
+      "Recall maligno": 0.9523809523809523,
+      "F1 maligno": 0.8888888888888888,
+      "ROC-AUC test": 0.9206349206349206,
+      "Malignos no detectados (FN)": 2,
+      "Profundidad": 6.0,
+      "Hojas": 16.0,
+      "Tiempo fit (s)": 0.01216409799963003
+    },
+    {
+      "Modelo": "CART Gini (podado)",
+      "Acc. train": 0.9758241758241758,
+      "Acc. CV (media)": 0.9362318840579711,
+      "Acc. CV (std)": 0.038593561612911755,
+      "ROC-AUC CV": 0.9589466821211243,
+      "Acc. test": 0.9210526315789473,
+      "Precisión maligno": 0.8837209302325582,
+      "Recall maligno": 0.9047619047619048,
+      "F1 maligno": 0.8941176470588236,
+      "ROC-AUC test": 0.9262566137566137,
+      "Malignos no detectados (FN)": 4,
+      "Profundidad": 4.0,
+      "Hojas": 10.0,
+      "Tiempo fit (s)": 0.0057527540002411115
+    },
+    {
+      "Modelo": "CART Entropía (podado)",
+      "Acc. train": 0.9736263736263736,
+      "Acc. CV (media)": 0.9318840579710145,
+      "Acc. CV (std)": 0.04094441587387719,
+      "ROC-AUC CV": 0.9485547667342799,
+      "Acc. test": 0.8771929824561403,
+      "Precisión maligno": 0.78,
+      "Recall maligno": 0.9285714285714286,
+      "F1 maligno": 0.8478260869565217,
+      "ROC-AUC test": 0.9593253968253969,
+      "Malignos no detectados (FN)": 3,
+      "Profundidad": 4.0,
+      "Hojas": 10.0,
+      "Tiempo fit (s)": 0.006753980000212323
+    },
+    {
+      "Modelo": "Regresión Logística",
+      "Acc. train": 0.989010989010989,
+      "Acc. CV (media)": 0.9824154589371981,
+      "Acc. CV (std)": 0.013270875205920872,
+      "ROC-AUC CV": 0.9945015937409446,
+      "Acc. test": 0.9824561403508771,
+      "Precisión maligno": 0.9761904761904762,
+      "Recall maligno": 0.9761904761904762,
+      "F1 maligno": 0.9761904761904762,
+      "ROC-AUC test": 0.9953703703703703,
+      "Malignos no detectados (FN)": 1,
+      "Profundidad": NaN,
+      "Hojas": NaN,
+      "Tiempo fit (s)": 0.06533741800012649
+    }
+  ],
+  "stats": [
+    {
+      "Comparación (A vs B)": "Regresión Logística vs CART Gini (podado)",
+      "Acc. media A": 0.9780032206119162,
+      "Acc. media B": 0.9312077294685992,
+      "Diferencia A-B": 0.046795491143317235,
+      "p-valor Wilcoxon": 1.9235572231969526e-05,
+      "Significativo (α=0.05)": "Sí"
+    },
+    {
+      "Comparación (A vs B)": "Regresión Logística vs CART Entropía (podado)",
+      "Acc. media A": 0.9780032206119162,
+      "Acc. media B": 0.932657004830918,
+      "Diferencia A-B": 0.0453462157809984,
+      "p-valor Wilcoxon": 5.146820318901285e-05,
+      "Significativo (α=0.05)": "Sí"
+    },
+    {
+      "Comparación (A vs B)": "CART Gini (podado) vs CART Entropía (podado)",
+      "Acc. media A": 0.9312077294685992,
+      "Acc. media B": 0.932657004830918,
+      "Diferencia A-B": -0.0014492753623188395,
+      "p-valor Wilcoxon": 0.6549301972715509,
+      "Significativo (α=0.05)": "No"
+    },
+    {
+      "Comparación (A vs B)": "CART Gini (podado) vs CART Gini (sin podar)",
+      "Acc. media A": 0.9312077294685992,
+      "Acc. media B": 0.9187761674718196,
+      "Diferencia A-B": 0.01243156199677939,
+      "p-valor Wilcoxon": 0.014970913916672029,
+      "Significativo (α=0.05)": "Sí"
+    }
+  ],
+  "ci": [
+    {
+      "Modelo": "CART Gini (sin podar)",
+      "IC95% inf": 0.8596491228070176,
+      "IC95% sup": 0.956140350877193
+    },
+    {
+      "Modelo": "CART Entropía (sin podar)",
+      "IC95% inf": 0.8596491228070176,
+      "IC95% sup": 0.9649122807017544
+    },
+    {
+      "Modelo": "CART Gini (podado)",
+      "IC95% inf": 0.868421052631579,
+      "IC95% sup": 0.9649122807017544
+    },
+    {
+      "Modelo": "CART Entropía (podado)",
+      "IC95% inf": 0.8070175438596491,
+      "IC95% sup": 0.9385964912280702
+    },
+    {
+      "Modelo": "Regresión Logística",
+      "IC95% inf": 0.956140350877193,
+      "IC95% sup": 1.0
+    }
+  ],
+  "best_depth": {
+    "gini": 5,
+    "entropy": 4
+  },
+  "curves": {
+    "gini": {
+      "train": [
+        0.9242984077762537,
+        0.9548237819786511,
+        0.9750927306339078,
+        0.9880338720257619,
+        0.9924312719899815,
+        0.9958494841672133,
+        0.9985347963504084,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv": [
+        0.8857487922705314,
+        0.9252657004830919,
+        0.9275845410628019,
+        0.9341545893719807,
+        0.9385024154589372,
+        0.927632850241546,
+        0.9275845410628019,
+        0.9253140096618357,
+        0.9253140096618357,
+        0.9253140096618357,
+        0.9253140096618357,
+        0.9253140096618357
+      ]
+    },
+    "entropy": {
+      "train": [
+        0.9233216053431927,
+        0.9438392271453278,
+        0.9741159282008468,
+        0.9870600512851094,
+        0.9958494841672134,
+        0.9995110024449879,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "cv": [
+        0.8769565217391305,
+        0.9054589371980676,
+        0.927536231884058,
+        0.9318840579710145,
+        0.9230434782608696,
+        0.9208695652173914,
+        0.9230434782608696,
+        0.9230434782608696,
+        0.9230434782608696,
+        0.9230434782608696,
+        0.9230434782608696,
+        0.9230434782608696
+      ]
+    }
+  }
+}

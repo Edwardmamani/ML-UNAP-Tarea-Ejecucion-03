@@ -1,0 +1,14 @@
+# Dependencias para reproducibilidad de la Tarea de Ejecución 03
+# Aprendizaje de Máquina - UNAP (2026-II)
+
+scikit-learn>=1.4.0
+xgboost>=2.0.0
+pandas>=2.1.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.13.0
+scipy>=1.11.0
+python-docx>=1.1.0
+nbformat>=5.9.0
+nbclient>=0.10.0
+ipykernel>=6.29.0

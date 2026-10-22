@@ -1,0 +1,186 @@
+{
+  "results": [
+    {
+      "Modelo": "Árbol individual (sin podar)",
+      "Acc. train": 1.0,
+      "Acc. CV (media)": 0.9253140096618357,
+      "Acc. CV (std)": 0.04157576726219799,
+      "Acc. OOB": NaN,
+      "Acc. test": 0.9122807017543859,
+      "Precisión maligno": 0.8478260869565217,
+      "Recall maligno": 0.9285714285714286,
+      "F1 maligno": 0.8863636363636364,
+      "ROC-AUC test": 0.9156746031746031,
+      "Tiempo fit (s)": 0.012442262999684317
+    },
+    {
+      "Modelo": "Árbol individual (depth=4, leaf=16%)",
+      "Acc. train": 0.9230769230769231,
+      "Acc. CV (media)": 0.8857487922705314,
+      "Acc. CV (std)": 0.04126873623740156,
+      "Acc. OOB": NaN,
+      "Acc. test": 0.9210526315789473,
+      "Precisión maligno": 0.9230769230769231,
+      "Recall maligno": 0.8571428571428571,
+      "F1 maligno": 0.8888888888888888,
+      "ROC-AUC test": 0.9657738095238095,
+      "Tiempo fit (s)": 0.007035831999928632
+    },
+    {
+      "Modelo": "Bagging 300 árboles (sin podar)",
+      "Acc. train": 1.0,
+      "Acc. CV (media)": 0.962657004830918,
+      "Acc. CV (std)": 0.03668766464494639,
+      "Acc. OOB": 0.9648351648351648,
+      "Acc. test": 0.9473684210526315,
+      "Precisión maligno": 0.9285714285714286,
+      "Recall maligno": 0.9285714285714286,
+      "F1 maligno": 0.9285714285714286,
+      "ROC-AUC test": 0.9930555555555556,
+      "Tiempo fit (s)": 1.205759644999489
+    },
+    {
+      "Modelo": "Bagging 300 árboles (depth=4, leaf=16%)",
+      "Acc. train": 0.945054945054945,
+      "Acc. CV (media)": 0.9208695652173914,
+      "Acc. CV (std)": 0.02000700010521595,
+      "Acc. OOB": 0.9208791208791208,
+      "Acc. test": 0.9473684210526315,
+      "Precisión maligno": 0.9090909090909091,
+      "Recall maligno": 0.9523809523809523,
+      "F1 maligno": 0.9302325581395349,
+      "ROC-AUC test": 0.9884259259259259,
+      "Tiempo fit (s)": 0.7402957590002188
+    }
+  ],
+  "bootstrap_unique_frac": 0.6314652014652014,
+  "convergence": [
+    {
+      "n_estimators": 1,
+      "Acc. test": 0.9210526315789473,
+      "Acc. OOB": NaN,
+      "Acc. CV": 0.9451690821256038
+    },
+    {
+      "n_estimators": 5,
+      "Acc. test": 0.9210526315789473,
+      "Acc. OOB": NaN,
+      "Acc. CV": 0.9561352657004832
+    },
+    {
+      "n_estimators": 10,
+      "Acc. test": 0.9298245614035088,
+      "Acc. OOB": 0.9296703296703297,
+      "Acc. CV": 0.9472946859903383
+    },
+    {
+      "n_estimators": 25,
+      "Acc. test": 0.9473684210526315,
+      "Acc. OOB": 0.9560439560439561,
+      "Acc. CV": 0.9561835748792271
+    },
+    {
+      "n_estimators": 50,
+      "Acc. test": 0.9385964912280702,
+      "Acc. OOB": 0.9516483516483516,
+      "Acc. CV": 0.9627053140096619
+    },
+    {
+      "n_estimators": 100,
+      "Acc. test": 0.9385964912280702,
+      "Acc. OOB": 0.9560439560439561,
+      "Acc. CV": 0.9604830917874396
+    },
+    {
+      "n_estimators": 200,
+      "Acc. test": 0.9473684210526315,
+      "Acc. OOB": 0.9648351648351648,
+      "Acc. CV": 0.962657004830918
+    },
+    {
+      "n_estimators": 300,
+      "Acc. test": 0.9473684210526315,
+      "Acc. OOB": 0.9648351648351648,
+      "Acc. CV": 0.962657004830918
+    },
+    {
+      "n_estimators": 500,
+      "Acc. test": 0.9473684210526315,
+      "Acc. OOB": 0.9604395604395605,
+      "Acc. CV": 0.9583091787439614
+    }
+  ],
+  "variance_30_splits": [
+    {
+      "Modelo": "Bagging (100 árboles)",
+      "mean": 0.9578947368421052,
+      "std": 0.01932846997964026,
+      "min": 0.9210526315789473,
+      "max": 0.9912280701754386
+    },
+    {
+      "Modelo": "Árbol individual",
+      "mean": 0.9292397660818713,
+      "std": 0.0289499653579777,
+      "min": 0.868421052631579,
+      "max": 0.9736842105263158
+    }
+  ],
+  "bagging_wins_30": 23,
+  "stats": [
+    {
+      "Comparación": "Bagging 300 árboles (sin podar) vs Árbol individual (sin podar)",
+      "Acc. A": 0.9590338164251209,
+      "Acc. B": 0.9187761674718196,
+      "Diferencia A-B": 0.04025764895330113,
+      "p-valor Wilcoxon": 6.677452334162531e-06,
+      "Significativo (α=0.05)": "Sí"
+    },
+    {
+      "Comparación": "Bagging 300 árboles (depth=4, leaf=16%) vs Árbol individual (depth=4, leaf=16%)",
+      "Acc. A": 0.9187439613526571,
+      "Acc. B": 0.8858132045088567,
+      "Diferencia A-B": 0.03293075684380033,
+      "p-valor Wilcoxon": 0.0001499234134903256,
+      "Significativo (α=0.05)": "Sí"
+    },
+    {
+      "Comparación": "Bagging 300 árboles (sin podar) vs Árbol individual (depth=4, leaf=16%)",
+      "Acc. A": 0.9590338164251209,
+      "Acc. B": 0.8858132045088567,
+      "Diferencia A-B": 0.07322061191626411,
+      "p-valor Wilcoxon": 1.7935797791383286e-06,
+      "Significativo (α=0.05)": "Sí"
+    },
+    {
+      "Comparación": "Bagging(100) vs Árbol — 30 particiones",
+      "Acc. A": 0.9578947368421052,
+      "Acc. B": 0.9292397660818714,
+      "Diferencia A-B": 0.02865497076023391,
+      "p-valor Wilcoxon": 0.00010016395934337444,
+      "Significativo (α=0.05)": "Sí"
+    }
+  ],
+  "ci": [
+    {
+      "Modelo": "Árbol individual (sin podar)",
+      "IC95% inf": 0.8596491228070176,
+      "IC95% sup": 0.956140350877193
+    },
+    {
+      "Modelo": "Árbol individual (depth=4, leaf=16%)",
+      "IC95% inf": 0.868421052631579,
+      "IC95% sup": 0.9649122807017544
+    },
+    {
+      "Modelo": "Bagging 300 árboles (sin podar)",
+      "IC95% inf": 0.9035087719298246,
+      "IC95% sup": 0.9824561403508771
+    },
+    {
+      "Modelo": "Bagging 300 árboles (depth=4, leaf=16%)",
+      "IC95% inf": 0.9035087719298246,
+      "IC95% sup": 0.9824561403508771
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "results": [
+    {
+      "Modelo": "Regresión Lineal",
+      "RMSE train": 3.369678614269931,
+      "RMSE CV (media)": 3.450882952819291,
+      "RMSE CV (std)": 0.5331929400835086,
+      "RMSE test": 2.887675167561038,
+      "MAE test": 2.28824681388505,
+      "R² train": 0.8188928532210522,
+      "R² CV": 0.7964583149601384,
+      "R² test": 0.8449094399450834,
+      "Profundidad": NaN,
+      "Hojas": NaN,
+      "CV/train (diagnóstico)": 1.024098541090974
+    },
+    {
+      "Modelo": "CART-1 sin podar",
+      "RMSE train": 0.0,
+      "RMSE CV (media)": 3.797725305124279,
+      "RMSE CV (std)": 0.9485224326318251,
+      "RMSE test": 3.367844265995683,
+      "MAE test": 2.2712499999999998,
+      "R² train": 1.0,
+      "R² CV": 0.7556756045145431,
+      "R² test": 0.7890436077055961,
+      "Profundidad": 18.0,
+      "Hojas": 261.0,
+      "CV/train (diagnóstico)": Infinity
+    },
+    {
+      "Modelo": "CART-2 max_depth=3",
+      "RMSE train": 3.2312251841082453,
+      "RMSE CV (media)": 3.7728344848980093,
+      "RMSE CV (std)": 0.5289952448883016,
+      "RMSE test": 3.7189540664303116,
+      "MAE test": 2.683657701051024,
+      "R² train": 0.8334697724866797,
+      "R² CV": 0.756400948163386,
+      "R² test": 0.7427648476710245,
+      "Profundidad": 3.0,
+      "Hojas": 8.0,
+      "CV/train (diagnóstico)": 1.1676173184875809
+    },
+    {
+      "Modelo": "CART-3 depth=5, leaf=5, split=10",
+      "RMSE train": 2.3850866725813433,
+      "RMSE CV (media)": 3.342707019359088,
+      "RMSE CV (std)": 0.6337163791217175,
+      "RMSE test": 2.7092084216501258,
+      "MAE test": 2.0322462093638562,
+      "R² train": 0.9092666477729996,
+      "R² CV": 0.8100902643093001,
+      "R² test": 0.8634871536963059,
+      "Profundidad": 5.0,
+      "Hojas": 27.0,
+      "CV/train (diagnóstico)": 1.4015033741903085
+    },
+    {
+      "Modelo": "CART-4 depth=4, leaf=10%",
+      "RMSE train": 3.420198509990521,
+      "RMSE CV (media)": 3.8152617391542805,
+      "RMSE CV (std)": 0.5887333179252086,
+      "RMSE test": 3.3211447827007143,
+      "MAE test": 2.6111493965384556,
+      "R² train": 0.8134216482454327,
+      "R² CV": 0.75262660128642,
+      "R² test": 0.7948534085879508,
+      "Profundidad": 3.0,
+      "Hojas": 7.0,
+      "CV/train (diagnóstico)": 1.1155088595032616
+    },
+    {
+      "Modelo": "CART-5 GridSearchCV",
+      "RMSE train": 2.407310906683691,
+      "RMSE CV (media)": 3.1937860851105446,
+      "RMSE CV (std)": 0.6748057958699978,
+      "RMSE test": 2.733556103191343,
+      "MAE test": 2.0303411484348985,
+      "R² train": 0.9075678633560944,
+      "R² CV": 0.8246341036015707,
+      "R² test": 0.8610224435888111,
+      "Profundidad": 8.0,
+      "Hojas": 32.0,
+      "CV/train (diagnóstico)": 1.326702785354095
+    }
+  ],
+  "best_params": {
+    "criterion": "squared_error",
+    "max_depth": 8,
+    "min_samples_leaf": 8,
+    "min_samples_split": 2
+  },
+  "grid_best_rmse_cv": 3.1937860851105446,
+  "stats": [
+    {
+      "Comparación": "Regresión Lineal vs CART-1 sin podar",
+      "RMSE medio LR": 3.4630606621651414,
+      "RMSE medio árbol": 3.835462338925255,
+      "Diferencia (árbol - LR)": 0.372401676760114,
+      "p-valor Wilcoxon": 0.054921628907322884,
+      "Significativo (α=0.05)": "No"
+    },
+    {
+      "Comparación": "Regresión Lineal vs CART-2 max_depth=3",
+      "RMSE medio LR": 3.4630606621651414,
+      "RMSE medio árbol": 3.7231073716779526,
+      "Diferencia (árbol - LR)": 0.2600467095128109,
+      "p-valor Wilcoxon": 0.0061949919909238815,
+      "Significativo (α=0.05)": "Sí"
+    },
+    {
+      "Comparación": "Regresión Lineal vs CART-3 depth=5, leaf=5, split=10",
+      "RMSE medio LR": 3.4630606621651414,
+      "RMSE medio árbol": 3.316851509424618,
+      "Diferencia (árbol - LR)": -0.1462091527405228,
+      "p-valor Wilcoxon": 0.10039735585451126,
+      "Significativo (α=0.05)": "No"
+    },
+    {
+      "Comparación": "Regresión Lineal vs CART-4 depth=4, leaf=10%",
+      "RMSE medio LR": 3.4630606621651414,
+      "RMSE medio árbol": 3.761966940735057,
+      "Diferencia (árbol - LR)": 0.29890627856991636,
+      "p-valor Wilcoxon": 0.009301122277975082,
+      "Significativo (α=0.05)": "Sí"
+    },
+    {
+      "Comparación": "Regresión Lineal vs CART-5 GridSearchCV",
+      "RMSE medio LR": 3.4630606621651414,
+      "RMSE medio árbol": 3.190418751974337,
+      "Diferencia (árbol - LR)": -0.27264191019080414,
+      "p-valor Wilcoxon": 0.01453801617026329,
+      "Significativo (α=0.05)": "Sí"
+    }
+  ],
+  "ci": [
+    {
+      "Modelo": "Regresión Lineal",
+      "IC95% inf": 2.4005941800740005,
+      "IC95% sup": 3.381537304023573
+    },
+    {
+      "Modelo": "CART-1 sin podar",
+      "IC95% inf": 2.266376329037809,
+      "IC95% sup": 4.546106058923452
+    },
+    {
+      "Modelo": "CART-2 max_depth=3",
+      "IC95% inf": 2.8753820225322646,
+      "IC95% sup": 4.653336954611164
+    },
+    {
+      "Modelo": "CART-3 depth=5, leaf=5, split=10",
+      "IC95% inf": 2.1079750402453743,
+      "IC95% sup": 3.400488665093904
+    },
+    {
+      "Modelo": "CART-4 depth=4, leaf=10%",
+      "IC95% inf": 2.771121812013212,
+      "IC95% sup": 3.8619646129755276
+    },
+    {
+      "Modelo": "CART-5 GridSearchCV",
+      "IC95% inf": 2.102467084801867,
+      "IC95% sup": 3.4077931524570255
+    }
+  ],
+  "complexity": {
+    "depths": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "train": [
+      5.125320053879942,
+      4.1127851316139825,
+      3.266797293809379,
+      2.639233350602649,
+      2.1581139801157034,
+      1.7420733983349237,
+      1.3618487064662317,
+      1.0234282489018893,
+      0.7199911826343358,
+      0.5064926595598505,
+      0.3574889737276084,
+      0.20756883790016872,
+      0.11068970547520485,
+      0.04840138644045195,
+      0.020226530766652772
+    ],
+    "cv": [
+      5.284184813357562,
+      4.501031197753101,
+      3.7728344848980093,
+      3.449091853790525,
+      3.4524676428497285,
+      3.3858108890313106,
+      3.5391726861995365,
+      3.6418998057429235,
+      3.768560921353481,
+      3.705030286019119,
+      3.7869009542766805,
+      3.8232167917164985,
+      3.8022219827896144,
+      3.759239051122319,
+      3.833059052655996
+    ]
+  }
+}

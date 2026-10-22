@@ -1,0 +1,208 @@
+{
+  "results": [
+    {
+      "Modelo": "Regresión Logística",
+      "Acc. train": 0.7947882736156352,
+      "Acc. CV (media)": 0.7834479111581174,
+      "Acc. CV (std)": 0.046367054661505064,
+      "F1 CV": 0.6503115227550164,
+      "ROC-AUC CV": 0.8387987012987013,
+      "Acc. test": 0.7142857142857143,
+      "Acc. balanceada test": 0.6735185185185186,
+      "Precisión test": 0.6041666666666666,
+      "Recall test": 0.5370370370370371,
+      "F1 test": 0.5686274509803921,
+      "ROC-AUC test": 0.8177777777777778
+    },
+    {
+      "Modelo": "KNN",
+      "Acc. train": 0.7833876221498371,
+      "Acc. CV (media)": 0.7689317821258593,
+      "Acc. CV (std)": 0.04983675268807404,
+      "F1 CV": 0.5924332759304797,
+      "ROC-AUC CV": 0.8258874458874459,
+      "Acc. test": 0.7337662337662337,
+      "Acc. balanceada test": 0.6799999999999999,
+      "Precisión test": 0.6585365853658537,
+      "Recall test": 0.5,
+      "F1 test": 0.5684210526315789,
+      "ROC-AUC test": 0.7893518518518519
+    },
+    {
+      "Modelo": "Árbol de decisión",
+      "Acc. train": 0.760586319218241,
+      "Acc. CV (media)": 0.7606821787414068,
+      "Acc. CV (std)": 0.038627711925658524,
+      "F1 CV": 0.551540191013047,
+      "ROC-AUC CV": 0.7723593073593074,
+      "Acc. test": 0.6948051948051948,
+      "Acc. balanceada test": 0.5988888888888889,
+      "Precisión test": 0.6521739130434783,
+      "Recall test": 0.2777777777777778,
+      "F1 test": 0.38961038961038963,
+      "ROC-AUC test": 0.7800925925925926
+    },
+    {
+      "Modelo": "Voting (hard)",
+      "Acc. train": 0.7931596091205212,
+      "Acc. CV (media)": 0.7835007932310946,
+      "Acc. CV (std)": 0.044252027060795396,
+      "F1 CV": 0.6248142619659648,
+      "ROC-AUC CV": NaN,
+      "Acc. test": 0.7142857142857143,
+      "Acc. balanceada test": 0.6522222222222223,
+      "Precisión test": 0.631578947368421,
+      "Recall test": 0.4444444444444444,
+      "F1 test": 0.5217391304347826,
+      "ROC-AUC test": NaN
+    },
+    {
+      "Modelo": "Voting (soft)",
+      "Acc. train": 0.7996742671009772,
+      "Acc. CV (media)": 0.7818614489687995,
+      "Acc. CV (std)": 0.037956842345558545,
+      "F1 CV": 0.6305803224379075,
+      "ROC-AUC CV": 0.8396753246753248,
+      "Acc. test": 0.7337662337662337,
+      "Acc. balanceada test": 0.6714814814814815,
+      "Precisión test": 0.6756756756756757,
+      "Recall test": 0.46296296296296297,
+      "F1 test": 0.5494505494505495,
+      "ROC-AUC test": 0.8153703703703704
+    }
+  ],
+  "best_params": {
+    "Regresión Logística": {
+      "clf__C": 1
+    },
+    "KNN": {
+      "clf__n_neighbors": 27,
+      "clf__weights": "uniform"
+    },
+    "Árbol de decisión": {
+      "clf__max_depth": 3,
+      "clf__min_samples_leaf": 20
+    }
+  },
+  "repeated_cv": [
+    {
+      "Modelo": "Regresión Logística",
+      "Acc. media 30 folds": 0.7807244843997885,
+      "std": 0.04478413040054711
+    },
+    {
+      "Modelo": "KNN",
+      "Acc. media 30 folds": 0.7606821787414068,
+      "std": 0.043358427860432744
+    },
+    {
+      "Modelo": "Árbol de decisión",
+      "Acc. media 30 folds": 0.7481667548034547,
+      "std": 0.03661796753184149
+    },
+    {
+      "Modelo": "Voting (hard)",
+      "Acc. media 30 folds": 0.7725982725189495,
+      "std": 0.04027827021162264
+    },
+    {
+      "Modelo": "Voting (soft)",
+      "Acc. media 30 folds": 0.7736999823726424,
+      "std": 0.03970370480947825
+    }
+  ],
+  "stats": [
+    {
+      "Comparación": "Voting (soft) vs Regresión Logística",
+      "Acc. ensamble": 0.7736999823726424,
+      "Acc. individual": 0.7807244843997885,
+      "Diferencia": -0.007024502027146125,
+      "p-valor Wilcoxon": 0.14533653627146975,
+      "Significativo (α=0.05)": "No"
+    },
+    {
+      "Comparación": "Voting (soft) vs KNN",
+      "Acc. ensamble": 0.7736999823726424,
+      "Acc. individual": 0.7606821787414068,
+      "Diferencia": 0.01301780363123567,
+      "p-valor Wilcoxon": 0.1354418774846801,
+      "Significativo (α=0.05)": "No"
+    },
+    {
+      "Comparación": "Voting (soft) vs Árbol de decisión",
+      "Acc. ensamble": 0.7736999823726424,
+      "Acc. individual": 0.7481667548034547,
+      "Diferencia": 0.02553322756918737,
+      "p-valor Wilcoxon": 9.421050874164294e-05,
+      "Significativo (α=0.05)": "Sí"
+    },
+    {
+      "Comparación": "Voting (hard) vs Regresión Logística",
+      "Acc. ensamble": 0.7725982725189495,
+      "Acc. individual": 0.7807244843997885,
+      "Diferencia": -0.008126211880839052,
+      "p-valor Wilcoxon": 0.231148968348876,
+      "Significativo (α=0.05)": "No"
+    },
+    {
+      "Comparación": "Voting (hard) vs KNN",
+      "Acc. ensamble": 0.7725982725189495,
+      "Acc. individual": 0.7606821787414068,
+      "Diferencia": 0.011916093777542743,
+      "p-valor Wilcoxon": 0.053984010947143314,
+      "Significativo (α=0.05)": "No"
+    },
+    {
+      "Comparación": "Voting (hard) vs Árbol de decisión",
+      "Acc. ensamble": 0.7725982725189495,
+      "Acc. individual": 0.7481667548034547,
+      "Diferencia": 0.024431517715494445,
+      "p-valor Wilcoxon": 0.0001558257621984265,
+      "Significativo (α=0.05)": "Sí"
+    }
+  ],
+  "ci": [
+    {
+      "Modelo": "Regresión Logística",
+      "IC95% inf": 0.6363636363636364,
+      "IC95% sup": 0.7792207792207793
+    },
+    {
+      "Modelo": "KNN",
+      "IC95% inf": 0.6623376623376623,
+      "IC95% sup": 0.8051948051948052
+    },
+    {
+      "Modelo": "Árbol de decisión",
+      "IC95% inf": 0.6168831168831169,
+      "IC95% sup": 0.7662337662337663
+    },
+    {
+      "Modelo": "Voting (hard)",
+      "IC95% inf": 0.6363636363636364,
+      "IC95% sup": 0.7792207792207793
+    },
+    {
+      "Modelo": "Voting (soft)",
+      "IC95% inf": 0.6558441558441559,
+      "IC95% sup": 0.7987012987012987
+    }
+  ],
+  "error_corr": {
+    "Regresión Logística": {
+      "Regresión Logística": 1.0,
+      "KNN": 0.757,
+      "Árbol de decisión": 0.611
+    },
+    "KNN": {
+      "Regresión Logística": 0.757,
+      "KNN": 1.0,
+      "Árbol de decisión": 0.686
+    },
+    "Árbol de decisión": {
+      "Regresión Logística": 0.611,
+      "KNN": 0.686,
+      "Árbol de decisión": 1.0
+    }
+  }
+}

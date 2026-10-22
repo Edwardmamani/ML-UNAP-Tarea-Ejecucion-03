@@ -1,0 +1,255 @@
+{
+  "results": [
+    {
+      "Modelo": "Baseline (clase mayoritaria)",
+      "Acc. CV (media)": 0.6515071390798519,
+      "Acc. CV (std)": 0.005181363813396448,
+      "F1 CV": 0.0,
+      "ROC-AUC CV": 0.5,
+      "Acc. train": 0.6514657980456026,
+      "Acc. test": 0.6493506493506493,
+      "Acc. balanceada test": 0.5,
+      "Precisión test": 0.0,
+      "Recall test": 0.0,
+      "F1 test": 0.0,
+      "ROC-AUC test": 0.5,
+      "Log-Loss test": 12.638683655924195,
+      "Tiempo fit (s)": 0.0009416699995199451,
+      "Inferencia (ms/muestra)": 0.0002796470780240624
+    },
+    {
+      "Modelo": "Random Forest (base)",
+      "Acc. CV (media)": 0.7557377049180328,
+      "Acc. CV (std)": 0.048586050280444666,
+      "F1 CV": 0.622752756837704,
+      "ROC-AUC CV": 0.8187094155844156,
+      "Acc. train": 1.0,
+      "Acc. test": 0.7337662337662337,
+      "Acc. balanceada test": 0.6927777777777777,
+      "Precisión test": 0.6382978723404256,
+      "Recall test": 0.5555555555555556,
+      "F1 test": 0.594059405940594,
+      "ROC-AUC test": 0.8078703703703703,
+      "Log-Loss test": 0.499626842320049,
+      "Tiempo fit (s)": 1.077906917999826,
+      "Inferencia (ms/muestra)": 0.6798668016235988
+    },
+    {
+      "Modelo": "Random Forest (optimizado)",
+      "Acc. CV (media)": 0.7672131147540983,
+      "Acc. CV (std)": 0.0316635579561196,
+      "F1 CV": 0.5992574052114941,
+      "ROC-AUC CV": 0.835400432900433,
+      "Acc. train": 0.8159609120521173,
+      "Acc. test": 0.7272727272727273,
+      "Acc. balanceada test": 0.6664814814814815,
+      "Precisión test": 0.6578947368421053,
+      "Recall test": 0.46296296296296297,
+      "F1 test": 0.5434782608695652,
+      "ROC-AUC test": 0.8035185185185186,
+      "Log-Loss test": 0.5126484665137397,
+      "Tiempo fit (s)": 1.5353972659995634,
+      "Inferencia (ms/muestra)": 0.949702113311778
+    },
+    {
+      "Modelo": "XGBoost (base)",
+      "Acc. CV (media)": 0.7491538868323638,
+      "Acc. CV (std)": 0.053582360858834735,
+      "F1 CV": 0.6164098233891709,
+      "ROC-AUC CV": 0.8015963203463203,
+      "Acc. train": 0.9820846905537459,
+      "Acc. test": 0.7467532467532467,
+      "Acc. balanceada test": 0.7198148148148149,
+      "Precisión test": 0.6415094339622641,
+      "Recall test": 0.6296296296296297,
+      "F1 test": 0.6355140186915887,
+      "ROC-AUC test": 0.8211111111111111,
+      "Log-Loss test": 0.5459355711936951,
+      "Tiempo fit (s)": 3.9987943209998775,
+      "Inferencia (ms/muestra)": 0.08472010909094757
+    },
+    {
+      "Modelo": "XGBoost (optimizado)",
+      "Acc. CV (media)": 0.7590957165520889,
+      "Acc. CV (std)": 0.04509734846497041,
+      "F1 CV": 0.6056688540524671,
+      "ROC-AUC CV": 0.8319967532467534,
+      "Acc. train": 0.8061889250814332,
+      "Acc. test": 0.7402597402597403,
+      "Acc. balanceada test": 0.6892592592592592,
+      "Precisión test": 0.6666666666666666,
+      "Recall test": 0.5185185185185185,
+      "F1 test": 0.5833333333333334,
+      "ROC-AUC test": 0.8209259259259258,
+      "Log-Loss test": 0.4913657605648041,
+      "Tiempo fit (s)": 0.17250760400020226,
+      "Inferencia (ms/muestra)": 0.04138672467516616
+    }
+  ],
+  "rf_best": {
+    "n_estimators": 500,
+    "min_samples_leaf": 4,
+    "max_features": "log2",
+    "max_depth": 4
+  },
+  "xgb_best": {
+    "subsample": 0.8,
+    "reg_lambda": 5,
+    "n_estimators": 100,
+    "min_child_weight": 5,
+    "max_depth": 2,
+    "learning_rate": 0.05,
+    "gamma": 0.1,
+    "colsample_bytree": 0.6
+  },
+  "rf_search_auc": 0.8377117940199337,
+  "xgb_search_auc": 0.8399626245847177,
+  "rf_search_time": 85.875846809,
+  "xgb_search_time": 14.167494985999838,
+  "stats": [
+    {
+      "Comparación": "Random Forest (optimizado) vs XGBoost (optimizado)",
+      "AUC A": 0.8348809523809523,
+      "AUC B": 0.8341594516594516,
+      "Diferencia A-B": 0.0007215007215007082,
+      "p-valor Wilcoxon": 0.7188448479503617,
+      "Significativo (α=0.05)": "No"
+    },
+    {
+      "Comparación": "Random Forest (base) vs XGBoost (base)",
+      "AUC A": 0.8227155483405484,
+      "AUC B": 0.8068632756132758,
+      "Diferencia A-B": 0.015852272727272732,
+      "p-valor Wilcoxon": 0.0002134879828416146,
+      "Significativo (α=0.05)": "Sí"
+    },
+    {
+      "Comparación": "XGBoost (optimizado) vs XGBoost (base)",
+      "AUC A": 0.8341594516594516,
+      "AUC B": 0.8068632756132758,
+      "Diferencia A-B": 0.027296176046176054,
+      "p-valor Wilcoxon": 6.9759878496587715e-06,
+      "Significativo (α=0.05)": "Sí"
+    },
+    {
+      "Comparación": "Random Forest (optimizado) vs Random Forest (base)",
+      "AUC A": 0.8348809523809523,
+      "AUC B": 0.8227155483405484,
+      "Diferencia A-B": 0.01216540404040403,
+      "p-valor Wilcoxon": 0.0004031165771169942,
+      "Significativo (α=0.05)": "Sí"
+    }
+  ],
+  "ci": [
+    {
+      "Modelo": "Random Forest (base)",
+      "AUC IC95% inf": 0.730825448956707,
+      "AUC IC95% sup": 0.8742394553975437
+    },
+    {
+      "Modelo": "Random Forest (optimizado)",
+      "AUC IC95% inf": 0.7278101216995452,
+      "AUC IC95% sup": 0.8706514531004638
+    },
+    {
+      "Modelo": "XGBoost (base)",
+      "AUC IC95% inf": 0.7442477043120923,
+      "AUC IC95% sup": 0.8859652779994254
+    },
+    {
+      "Modelo": "XGBoost (optimizado)",
+      "AUC IC95% inf": 0.7496617157806377,
+      "AUC IC95% sup": 0.8846209912536442
+    }
+  ],
+  "auc_diff_ci": [
+    -0.033545142381738745,
+    -0.0028538948564238976
+  ],
+  "auc_diff_mean": -0.01764004938877241,
+  "oob": {
+    "first": 0.249185667752443,
+    "last": 0.23778501628664495
+  },
+  "xgb_curve": {
+    "best_iter": 204,
+    "min_val": 0.42991865739565005,
+    "final_val": 0.47524395326225016
+  },
+  "breast_cancer": [
+    {
+      "Modelo": "Random Forest",
+      "Acc. CV": 0.9627536231884057,
+      "AUC CV": 0.9891444508838019,
+      "Acc. test": 0.9473684210526315,
+      "AUC test": 0.9937169312169313,
+      "Tiempo fit (s)": 0.4841699280004832
+    },
+    {
+      "Modelo": "XGBoost",
+      "Acc. CV": 0.9713526570048309,
+      "AUC CV": 0.9938640973630832,
+      "Acc. test": 0.956140350877193,
+      "AUC test": 0.9947089947089947,
+      "Tiempo fit (s)": 0.1360410179995597
+    }
+  ],
+  "importance": [
+    {
+      "Variable": "Age",
+      "MDI RF": 0.12208512994460397,
+      "Gain XGB": 0.14107063088656127,
+      "Perm. Random Forest": 0.027055555555555666,
+      "Perm. XGBoost": 0.029716049382715968
+    },
+    {
+      "Variable": "BMI",
+      "MDI RF": 0.1643896950051928,
+      "Gain XGB": 0.14854801928172567,
+      "Perm. Random Forest": 0.0297962962962964,
+      "Perm. XGBoost": 0.04984567901234559
+    },
+    {
+      "Variable": "BloodPressure",
+      "MDI RF": 0.04093642514946284,
+      "Gain XGB": 0.049595464948750036,
+      "Perm. Random Forest": -0.0061790123456788955,
+      "Perm. XGBoost": -0.00024074074074081908
+    },
+    {
+      "Variable": "DiabetesPedigreeFunction",
+      "MDI RF": 0.07089031466627325,
+      "Gain XGB": 0.07754424008279477,
+      "Perm. Random Forest": 0.006876543209876651,
+      "Perm. XGBoost": 0.008030864197530773
+    },
+    {
+      "Variable": "Glucose",
+      "MDI RF": 0.37528509790049813,
+      "Gain XGB": 0.27848325588686285,
+      "Perm. Random Forest": 0.09064814814814824,
+      "Perm. XGBoost": 0.09277160493827154
+    },
+    {
+      "Variable": "Insulin",
+      "MDI RF": 0.10398941074093936,
+      "Gain XGB": 0.12179489750336375,
+      "Perm. Random Forest": 0.007654320987654439,
+      "Perm. XGBoost": 0.005907407407407302
+    },
+    {
+      "Variable": "Pregnancies",
+      "MDI RF": 0.06207181316349498,
+      "Gain XGB": 0.07183415364752682,
+      "Perm. Random Forest": 0.008790123456790255,
+      "Perm. XGBoost": 0.008425925925925847
+    },
+    {
+      "Variable": "SkinThickness",
+      "MDI RF": 0.06035211342953477,
+      "Gain XGB": 0.11112933776241482,
+      "Perm. Random Forest": -0.001611111111111004,
+      "Perm. XGBoost": 1.8518518518421492e-05
+    }
+  ]
+}
