@@ -14,7 +14,7 @@
       "Malignos no detectados (FN)": 3,
       "Profundidad": 7.0,
       "Hojas": 19.0,
-      "Tiempo fit (s)": 0.010547964000579668
+      "Tiempo fit (s)": 0.009192446999804815
     },
     {
       "Modelo": "CART Entropía (sin podar)",
@@ -30,7 +30,7 @@
       "Malignos no detectados (FN)": 2,
       "Profundidad": 6.0,
       "Hojas": 16.0,
-      "Tiempo fit (s)": 0.01216409799963003
+      "Tiempo fit (s)": 0.010078051000164123
     },
     {
       "Modelo": "CART Gini (podado)",
@@ -46,7 +46,7 @@
       "Malignos no detectados (FN)": 4,
       "Profundidad": 4.0,
       "Hojas": 10.0,
-      "Tiempo fit (s)": 0.0057527540002411115
+      "Tiempo fit (s)": 0.007595754000249144
     },
     {
       "Modelo": "CART Entropía (podado)",
@@ -62,7 +62,7 @@
       "Malignos no detectados (FN)": 3,
       "Profundidad": 4.0,
       "Hojas": 10.0,
-      "Tiempo fit (s)": 0.006753980000212323
+      "Tiempo fit (s)": 0.01505658400037646
     },
     {
       "Modelo": "Regresión Logística",
@@ -78,7 +78,7 @@
       "Malignos no detectados (FN)": 1,
       "Profundidad": NaN,
       "Hojas": NaN,
-      "Tiempo fit (s)": 0.06533741800012649
+      "Tiempo fit (s)": 0.014698191000206862
     }
   ],
   "stats": [

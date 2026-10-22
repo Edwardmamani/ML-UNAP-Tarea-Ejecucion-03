@@ -21,17 +21,17 @@
 
 ---
 
-## 📌 Acceso Directo a los Cuadernos en Google Colab
+## 📌 Cuadernos de Experimentación (.ipynb)
 
-Cada ítem cuenta con un cuaderno `.ipynb` independiente, completamente documentado, reproducible y pre-ejecutado con todas sus celdas y visualizaciones. Puede abrirlos y ejecutarlos en Google Colab con un solo clic:
+Cada ítem cuenta con un cuaderno `.ipynb` independiente, completamente documentado, reproducible y pre-ejecutado con todas sus celdas y visualizaciones. Puede acceder a ellos directamente en el repositorio:
 
-| Ítem | Tema / Enunciado | Cuaderno Interactivo | Enlace Directo |
-|:---:|:---|:---:|:---:|
-| **Ítem 1** | CART (Gini vs. Entropía) vs. Regresor Logístico en *breast_cancer* | [`Item 01`](notebooks/Item_01_Arboles_Gini_Entropia_vs_RegresionLogistica.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Edwardmamani/ML-UNAP-Tarea-Ejecucion-03/blob/main/notebooks/Item_01_Arboles_Gini_Entropia_vs_RegresionLogistica.ipynb) |
-| **Ítem 2** | Hiperparámetros en Árboles de Regresión vs. Regresor Lineal en *auto_mpg* | [`Item 02`](notebooks/Item_02_Arboles_Regresion_Hiperparametros_vs_RegresionLineal.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Edwardmamani/ML-UNAP-Tarea-Ejecucion-03/blob/main/notebooks/Item_02_Arboles_Regresion_Hiperparametros_vs_RegresionLineal.ipynb) |
-| **Ítem 3** | Ensamble Clasificador (`VotingClassifier`) vs. Modelos Individuales en *Pima Diabetes* | [`Item 03`](notebooks/Item_03_Ensemble_VotingClassifier_vs_Individuales.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Edwardmamani/ML-UNAP-Tarea-Ejecucion-03/blob/main/notebooks/Item_03_Ensemble_VotingClassifier_vs_Individuales.ipynb) |
-| **Ítem 4** | `BaggingClassifier` (con evaluación OOB) vs. Árbol Individual en *breast_cancer* | [`Item 04`](notebooks/Item_04_Bagging_Classifier_OOB_vs_ArbolIndividual.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Edwardmamani/ML-UNAP-Tarea-Ejecucion-03/blob/main/notebooks/Item_04_Bagging_Classifier_OOB_vs_ArbolIndividual.ipynb) |
-| **Ítem 5** | Random Forest vs. XGBoost (Eficacia, Eficiencia e Importancias) en *Pima Diabetes* | [`Item 05`](notebooks/Item_05_RandomForest_vs_XGBoost.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Edwardmamani/ML-UNAP-Tarea-Ejecucion-03/blob/main/notebooks/Item_05_RandomForest_vs_XGBoost.ipynb) |
+| Ítem | Tema / Enunciado | Cuaderno Jupyter (.ipynb) |
+|:---:|:---|:---:|
+| **Ítem 1** | CART (Gini vs. Entropía) vs. Regresor Logístico en *breast_cancer* | [`Item 01 — notebooks/Item_01_Arboles_Gini_Entropia_vs_RegresionLogistica.ipynb`](notebooks/Item_01_Arboles_Gini_Entropia_vs_RegresionLogistica.ipynb) |
+| **Ítem 2** | Hiperparámetros en Árboles de Regresión vs. Regresor Lineal en *auto_mpg* | [`Item 02 — notebooks/Item_02_Arboles_Regresion_Hiperparametros_vs_RegresionLineal.ipynb`](notebooks/Item_02_Arboles_Regresion_Hiperparametros_vs_RegresionLineal.ipynb) |
+| **Ítem 3** | Ensamble Clasificador (`VotingClassifier`) vs. Modelos Individuales en *Pima Diabetes* | [`Item 03 — notebooks/Item_03_Ensemble_VotingClassifier_vs_Individuales.ipynb`](notebooks/Item_03_Ensemble_VotingClassifier_vs_Individuales.ipynb) |
+| **Ítem 4** | `BaggingClassifier` (con evaluación OOB) vs. Árbol Individual en *breast_cancer* | [`Item 04 — notebooks/Item_04_Bagging_Classifier_OOB_vs_ArbolIndividual.ipynb`](notebooks/Item_04_Bagging_Classifier_OOB_vs_ArbolIndividual.ipynb) |
+| **Ítem 5** | Random Forest vs. XGBoost (Eficacia, Eficiencia e Importancias) en *Pima Diabetes* | [`Item 05 — notebooks/Item_05_RandomForest_vs_XGBoost.ipynb`](notebooks/Item_05_RandomForest_vs_XGBoost.ipynb) |
 
 ---
 
@@ -61,9 +61,10 @@ El informe incluye la carátula institucional completa, el **Índice de Contenid
 
 ```text
 ML-UNAP-Tarea-Ejecucion-03/
-├── README.md               # Resumen ejecutivo, tablas comparativas y badges de Colab
+├── README.md               # Resumen ejecutivo y tablas comparativas
 ├── requirements.txt        # Dependencias del proyecto
-├── .gitignore              # Filtros de exclusión
+├── ml_utils.py             # Módulo compartido de utilidades (load_csv, savefig, bootstrap_ci, plot_roc, etc.)
+├── .gitignore              # Filtros de exclusión (entorno, cachés y scripts auxiliares)
 ├── notebooks/              # Los 5 cuadernos interactivos .ipynb pre-ejecutados
 │   ├── Item_01_Arboles_Gini_Entropia_vs_RegresionLogistica.ipynb
 │   ├── Item_02_Arboles_Regresion_Hiperparametros_vs_RegresionLineal.ipynb
@@ -78,12 +79,7 @@ ML-UNAP-Tarea-Ejecucion-03/
 │   └── 05-Arboles-de-decision-en-clasificacion.md # Resumen teórico de referencia
 ├── figures/                # 29 figuras diagnósticas en alta resolución (.png)
 ├── results/                # 5 archivos JSON con todas las métricas experimentales
-├── data/                   # Datasets locales auxiliares (auto-mpg.csv, diabetes.csv)
-└── src/                    # Scripts Python para reproducibilidad y generación
-    ├── nb_common.py
-    ├── nb_item1.py ... nb_item5.py
-    ├── build_notebooks.py
-    └── build_docx_and_pdf.py
+└── data/                   # Datasets locales auxiliares (auto-mpg.csv, diabetes.csv)
 ```
 
 ---
@@ -111,15 +107,8 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3. Ejecutar los experimentos y regenerar los cuadernos
-```bash
-python src/build_notebooks.py
-```
-
-### 4. Regenerar el informe en Word (.docx) y convertir a PDF
-```bash
-python src/build_docx_and_pdf.py
-```
+### 3. Explorar y ejecutar los cuadernos
+Los 5 cuadernos se encuentran pre-ejecutados y documentados en la carpeta `notebooks/`. Pueden abrirse y ejecutarse interactivamente con JupyterLab, VS Code o cualquier entorno Jupyter.
 
 ---
 

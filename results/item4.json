@@ -11,7 +11,7 @@
       "Recall maligno": 0.9285714285714286,
       "F1 maligno": 0.8863636363636364,
       "ROC-AUC test": 0.9156746031746031,
-      "Tiempo fit (s)": 0.012442262999684317
+      "Tiempo fit (s)": 0.00792801499937923
     },
     {
       "Modelo": "Árbol individual (depth=4, leaf=16%)",
@@ -24,7 +24,7 @@
       "Recall maligno": 0.8571428571428571,
       "F1 maligno": 0.8888888888888888,
       "ROC-AUC test": 0.9657738095238095,
-      "Tiempo fit (s)": 0.007035831999928632
+      "Tiempo fit (s)": 0.004081492000295839
     },
     {
       "Modelo": "Bagging 300 árboles (sin podar)",
@@ -37,7 +37,7 @@
       "Recall maligno": 0.9285714285714286,
       "F1 maligno": 0.9285714285714286,
       "ROC-AUC test": 0.9930555555555556,
-      "Tiempo fit (s)": 1.205759644999489
+      "Tiempo fit (s)": 0.7514343559996632
     },
     {
       "Modelo": "Bagging 300 árboles (depth=4, leaf=16%)",
@@ -50,7 +50,7 @@
       "Recall maligno": 0.9523809523809523,
       "F1 maligno": 0.9302325581395349,
       "ROC-AUC test": 0.9884259259259259,
-      "Tiempo fit (s)": 0.7402957590002188
+      "Tiempo fit (s)": 0.49220086700006505
     }
   ],
   "bootstrap_unique_frac": 0.6314652014652014,
