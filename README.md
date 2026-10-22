@@ -41,7 +41,7 @@ El informe académico formal se encuentra disponible en la carpeta [`docs/`](doc
 - **Documento editable Word con Índice de Contenido:** [`docs/Informe_Tarea_Ejecucion_03.docx`](docs/Informe_Tarea_Ejecucion_03.docx)
 - **Documento oficial en PDF (20 páginas):** [`docs/Informe_Tarea_Ejecucion_03.pdf`](docs/Informe_Tarea_Ejecucion_03.pdf)
 
-El informe incluye la carátula institucional completa, el **Índice de Contenido estructurado y paginado**, el marco matemático riguroso, tablas de resultados experimentales, 19 figuras de apoyo, pruebas estadísticas no paramétricas (Wilcoxon) y las respuestas detalladas a cada una de las interrogantes de la tarea.
+El informe incluye la carátula institucional completa, el **Índice de Contenido estructurado y paginado**, tablas de resultados experimentales, 19 figuras de apoyo, pruebas estadísticas no paramétricas (Wilcoxon) y las respuestas detalladas a cada una de las interrogantes de la tarea.
 
 ---
 
